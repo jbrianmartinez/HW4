@@ -1,0 +1,19 @@
+3.2.5
+
+The most important factor to optimizing search times in a BST seems to be
+keeping the tree properly balanced, to minimize the number of nodes the search
+has to traverse. Without a built-in method to rebalance the tree, one way to
+ensure the tree remains balanced is to start with the median key as the root,
+then insert the median key of the lesser keys, and so on - i.e. using a 
+quicksort-like routine to insert each key.
+
+3.2.15
+
+a) floor("Q") - E Q J M
+b) select(5) -  E Q J M
+c) ceiling("Q") - E Q T S
+d) rank("J") - E Q J
+e) size("D", "T") - compiler error? (The size() method in the text's BST
+                    implementation only takes one argument, so I can't
+					determine what the output should be)
+f) keys("D", "T") - E D E Q J M J Q T
