@@ -5,7 +5,8 @@ keeping the tree properly balanced, to minimize the number of nodes the search
 has to traverse. Without a built-in method to rebalance the tree, one way to
 ensure the tree remains balanced is to start with the median key as the root,
 then insert the median key of the lesser keys, and so on - i.e. using a 
-quicksort-like routine to insert each key.
+quicksort-like routine to recursively insert each key that is less than the
+previous key inserted, then the one greater than the previous key.
 
 3.2.15
 
